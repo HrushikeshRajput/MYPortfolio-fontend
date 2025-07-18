@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Page</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="ImagesFolder/favicon.png" />
+
+    <!-- BOOTSTRAP CSS CDN LINKS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+
+    <!-- FONTAWSOME CDN LINKS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CUSTOM CSS FILE LINK -->
+    <link rel="stylesheet" href="CSSFolder/responsive-style.css" />
+    <link rel="stylesheet" href="CSSFolder/style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- NAVBAR SECTION -->
+    <header class="header-wrapper">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="ImagesFolder/logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav menu-navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item mt-3 mt-lg-0">
+                <a class="main-btn" href="#contact">Get In Touch</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- NAVBAR SECTION EXIT -->
+
+    <!-- BANNER SECTION -->
+    <section id="home" class="banner_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center text-md-start">
+            <h6>
+              Hi there! Check out some of my best
+              <b style="color: black">work.</b>
+            </h6>
+            <h1>I'm Hrushikesh Rajput <br /><span>WebDeveloper.</span></h1>
+            <div class="mt-4">
+              <a
+                class="main-btn"
+                href="ImagesFolder/MyResumeNew.pdf"
+                target="_blank"
+                >Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- BANNER SECTION EXIT -->
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about_wrapper">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <img
+              src="ImagesFolder/newpic.jpg"
+              class="img-fluid rounded-3"
+              alt="About_us"
+            />
+          </div>
+          <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+            <div class="my-3 my-lg-0">
+              <span class="subtitle">Know Me Better</span>
+              <h2>About Me</h2>
+              <p>
+                I enjoy solving problems, learning fast, and building clean,
+                user-friendly websites with a great look. My goal is to work at
+                a top tech company and later start my own business. I love
+                helping others—especially my parents—just to see them smile.
+              </p>
+            </div>
+            <!-- tab content -->
+            <div class="pt-4">
+              <ul
+                class="nav nav-pills mb-3 justify-content-center justify-content-lg-between"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-skill-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-skill"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-skill"
+                    aria-selected="true"
+                  >
+                    SKILLS
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-Award-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-Award"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-Award"
+                    aria-selected="false"
+                  >
+                    CERTIFICATIONS
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-experiance-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-experiance"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-experiance"
+                    aria-selected="false"
+                  >
+                    EDUCATION
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-education-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-education"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-education"
+                    aria-selected="false"
+                  >
+                    MY HOBBIES
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-skill"
+                  role="tabpanel"
+                  aria-labelledby="pills-skill-tab"
+                >
+                  <div class="single-progress">
+                    <h6>HTML</h6>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 95%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                      <span class="label">95%</span>
+                    </div>
+                  </div>
+
+                  <div class="single-progress">
+                    <h6>CSS</h6>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 95%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                      <span class="label">95%</span>
+                    </div>
+                  </div>
+
+                  <div class="single-progress">
+                    <h6>JavaScript</h6>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                      <span class="label">70%</span>
+                    </div>
+                  </div>
+
+                  <div class="single-progress">
+                    <h6>BOOTSTRAP</h6>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                      <span class="label">70%</span>
+                    </div>
+                  </div>
+
+                  <div class="single-progress">
+                    <h6>REACT</h6>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                      <span class="label">70%</span>
+                    </div>
+                  </div>
+
+                  <div class="single-progress">
+                    <h6>Node.js</h6>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 60%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                      <span class="label">60%</span>
+                    </div>
+                  </div>
+
+                  <div class="single-progress">
+                    <h6>EXPRESS</h6>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                      <span class="label">70%</span>
+                    </div>
+                  </div>
+
+                  <div class="single-progress">
+                    <h6>MONGODB</h6>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                      <span class="label">70%</span>
+                    </div>
+                  </div>
+
+                  <div class="single-progress">
+                    <h6>MYSQL</h6>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 70%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                      <span class="label">70%</span>
+                    </div>
+                  </div>
+
+                  <div class="single-progress">
+                    <h6>TAILWIND CSS</h6>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 10%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                      <span class="label">50%</span>
+                    </div>
+                  </div>
+
+                  <div class="single-progress">
+                    <h6>JAVA</h6>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 40%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                      <span class="label">50%</span>
+                    </div>
+                  </div>
+
+                  <div class="single-progress">
+                    <h6>PHP</h6>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 30%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                      <span class="label">50%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-Award"
+                  role="tabpanel"
+                  aria-labelledby="pills-Award-tab"
+                >
+                  <ul class="texxt-start ps-0">
+                    <li>
+                      <a href="#"
+                        >-> Full Stack Web Development<span
+                          >-From Apna College</span
+                        > </a
+                      >2023-24
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        >-> Python Complete Course With 30+ HandsOn Tasks<span
+                          >-From Udemy</span
+                        > </a
+                      >2024-25
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        >-> Python For Data Science <span>-From NPTEL</span> </a
+                      >2025
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        >-> Cloud Computing <span>-From NPTEL</span> </a
+                      >2025
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        >-> MS-CIT (89%) <span>-From Institute</span> </a
+                      >2019
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        >-> Typing 30-40
+                        <span>-From Sunrise Institute</span> </a
+                      >2021-22
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-experiance"
+                  role="tabpanel"
+                  aria-labelledby="pills-experiance-tab"
+                >
+                  <ul class="text-start ps-0">
+                    <li>
+                      <a href="#"
+                        >-> Master Of Computer Application(MCA)<span
+                          >-PES Modern College Of Engineering, Pune</span
+                        ></a
+                      >
+                      SY- CGPA: Persuing <br />
+                      FY- CGPA: 7.57 <br />
+                      2024-2026
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        >-> Bachlors Of Computer Science(BSC.cs)
+                        <span
+                          >-S.B.E.S. College Of Science, Chhatrapathi
+                          Shambhajinagar</span
+                        ></a
+                      >
+                      Overall Percentage: 79.10% <br />
+                      TY- Percentage: 81.40% <br />
+                      SY- Percentage: 84.28% <br />
+                      FY- Percentage: 79.10% <br />
+                      2021-2024
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        >-> Higer Secondary Education(HSC)
+                        <span
+                          >-Deogiri College, Chhatrapathi Shambhajinagar</span
+                        ></a
+                      >
+                      Percentage: 78.10% <br />
+                      2020-2021
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        >-> Secondary School Certificate(SSC)<span
+                          >-S.B. High School, Chhatrapathi Shambhajinagar</span
+                        ></a
+                      >
+                      Percentage: 68.40% <br />
+                      2019-2020
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-education"
+                  role="tabpanel"
+                  aria-labelledby="pills-education-tab"
+                >
+                  <ul class="text-start ps-0">
+                    <li>
+                      <span>-> Playing Cricket</span>
+                    </li>
+                    <li>
+                      <span>-> Watching Movies and WebSeries</span>
+                    </li>
+                    <li>
+                      <span>-> Listining Songs</span>
+                    </li>
+                    <li>
+                      <span>-> Drawing and Painting</span>
+                    </li>
+                    <li>
+                      <span
+                        >-> I love helping others just to see a smile on their
+                        face.</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION EXIT -->
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center mb-4">
+            <span class="subtitle">What I can do for you?</span>
+            <h2>My Expertise</h2>
+            <p>
+              I specialize in building modern, responsive websites and crafting
+              compelling content that aligns with your goals. Whether you're a
+              startup, agency, or individual, <br class="d-none d-md-block" />I
+              deliver results-driven solutions with clean code, clear messaging,
+              and creative design — all powered by the MERN stack.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="mb-3">
+                  <i class="fas fa-laptop-code fa-3x text-primary"></i>
+                </div>
+                <h3>Full-Stack Web Development</h3>
+                <p>
+                  I build scalable web applications using the MERN stack — from
+                  database to frontend — ensuring performance, security, and
+                  great UX.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="mb-3">
+                  <i class="fas fa-desktop fa-3x text-danger"></i>
+                </div>
+                <h3>Responsive Web Design</h3>
+                <p>
+                  I design user-centric interfaces that look and work great on
+                  all devices — clean layouts, modern UI, and smooth
+                  interactions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="mb-3">
+                  <i class="fas fa-pen-nib fa-3x text-primary"></i>
+                </div>
+                <h3>Content Writing</h3>
+                <p>
+                  From technical articles to engaging web copy, I write clear,
+                  SEO-friendly content that resonates with your audience and
+                  improves reach.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="mb-3">
+                  <i class="fas fa-chart-line fa-3x text-danger"></i>
+                </div>
+                <h3>SEO Optimization</h3>
+                <p>
+                  I optimize websites for better search visibility by
+                  structuring content, using relevant keywords, and improving
+                  technical SEO.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="mb-3">
+                  <i class="fas fa-plug fa-3x text-primary"></i>
+                </div>
+                <h3>API Integration</h3>
+                <p>
+                  I seamlessly integrate third-party APIs (like payment
+                  gateways, maps, auth systems) to extend your website’s
+                  functionality.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="mb-3">
+                  <i class="fas fa-tools fa-3x text-danger"></i>
+                </div>
+                <h3>Website Maintenance</h3>
+                <p>
+                  I provide ongoing support — from fixing bugs to adding new
+                  features — ensuring your site remains updated, fast, and
+                  secure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES SECTION EXIT -->
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="portfolio_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="clo-sm-12 text-center mb-4">
+            <span class="subtitle">My Latest Project</span>
+            <h2>Projects I’ve Built</h2>
+            <p>
+              I love turning ideas into functional web products. Here’s a look
+              at some of the projects I’ve developed
+              <br class="d-none d-md-block" />— both independently and in
+              collaboration.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span
+                style="
+                  background-image: url('./ImagesFolder/PortfolioFolder/Foodies.png');
+                "
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span
+                style="
+                  background-image: url('./ImagesFolder/PortfolioFolder/App-Landing-Page.png');
+                "
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span
+                style="
+                  background-image: url('./ImagesFolder/PortfolioFolder/E-Commerce-Website-Using-Bootstap-5.png');
+                "
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span
+                style="
+                  background-image: url('./ImagesFolder/PortfolioFolder/HeadPhones.png');
+                "
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span
+                style="
+                  background-image: url('./ImagesFolder/PortfolioFolder/Hashtag-Landing-Page.png');
+                "
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span
+                style="
+                  background-image: url('./ImagesFolder/PortfolioFolder/Christmas-Landing-Page.png');
+                "
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span
+                style="
+                  background-image: url('./ImagesFolder/PortfolioFolder/SEO-Landing-Page.png');
+                "
+              ></span>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card p-0">
+              <span
+                style="
+                  background-image: url('./ImagesFolder/PortfolioFolder/Pizza-Landing-Page.png');
+                "
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact_wrapper">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div
+            class="col-lg-6 order-2 order-lg-1 pe-lg-5 text-lg-start text-center"
+          >
+            <span class="subtitle">Let’s Work Together</span>
+            <h2>Get in Touch</h2>
+            <div class="row call_details mb-4">
+              <label class="col-sm-3 col-lg-4">Phone:</label>
+
+              <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+                <a href="tel:+918482969907">+91 84829 69907</a>
+              </div>
+
+              <label class="col-sm-3 col-lg-4">Email:</label>
+
+              <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+                <a href="mailto:hrushikeshrajput1845@gmail.com"
+                  >deltaprojects40@gmail.com</a
+                >
+              </div>
+            </div>
+
+            <form id="contactForm" novalidate>
+              <!-- Full Name -->
+              <div class="mb-4">
+                <label for="name" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your full name"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+
+              <!-- Phone -->
+              <div class="mb-4">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  class="form-control"
+                  placeholder="10-digit mobile number"
+                  pattern="^[0-9]{10}$"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid 10-digit mobile number.
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-4">
+                <label for="email" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="example@email.com"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="mb-4">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+                <div class="invalid-feedback">Please write a message.</div>
+              </div>
+
+              <button type="submit" class="main-btn btn btn-primary">
+                Submit
+              </button>
+
+              <!-- Success Message -->
+              <div
+                id="successMessage"
+                class="mt-3 fw-semibold text-success"
+                style="display: none"
+              >
+                ✅ Your message has been sent successfully!
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 order-1 mb-4 order-lg-1 mb-lg-0">
+            <img
+              src="./ImagesFolder/14.jpg"
+              class="img-fluid"
+              alt="Contact Image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT SECTION EXIT -->
+
+    <!-- FOOTER SECTION -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-6 text-center text-md-start">
+            <div class="footer-logo mb-3 mb-md-0">
+              <img src="ImagesFolder/logo.png" class="img-fluid" alt="logo" />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <ul
+              class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center social-icon mb-3 mb-md-0"
+            >
+              <li>
+                <a href="https://www.instagram.com/hrushirajput/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/hrushikesh-rajput/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/hrushikesh.rajput.75"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div class="copyright-text text-lg-start text-center mb-3 mb-lg-0">
+              <p class="mb-0">
+                Copyright <i class="fa-solid fa-copyright"></i>
+                <a href="#">HrushikeshRajput</a>.All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER SECTION EXIT -->
+
+    <!-- BOOTSTRAP JS LINK -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CUSTOME JS FILE LINK -->
+    <script src="JSFolder/script.js"></script>
+  </body>
+</html>
